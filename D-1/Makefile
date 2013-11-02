@@ -1,4 +1,4 @@
-all:
+all: cutmorph.o lib1.o
 	gcc -o a.exe cutmorph.o lib1.o
 
 cutmorph.o: cutmorph.c
