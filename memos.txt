@@ -1,0 +1,51 @@
+a
+a p && pushd C:\WORKS\WS\WS_Android_20130929_122122\AI && gitk
+a p && pushd C:\WORKS\WS\WS_Android_20130929_122122\AI
+pushd C:\WORKS\WS\WS_Android_20130929_122122\AI && gitk
+
+C:\WORKS\WS\WS_Android_20130929_122122\AI
+gitk
+
+C:\WORKS\PROGRAMS\FreeMind\FreeMind.exe C:\WORKS\WS\WS_Android~\FM\CM5(A)\CM5(A).mm
+C:\WORKS\WORKSPACES_ANDROID\FM\a
+
+pushd C:\WORKS\WORKSPACES_ANDROID\FM
+
+pushd C:\Users\IwabuchiKen\Desktop
+
+
+[Git]
+copy ..\ImageFileManager6\.gitignore .
+
+rd /q /s .git
+
+g init && g a . && gitk
+
+g init
+g a .
+gitk-
+
+g p origin master
+
+git remote add origin git@github.com:iwabuchiken/CM5.git
+
+git remote rm origin
+
+git log --grep=B4 -3
+
+git svn clone <URL>
+
+[Git for mm]
+pushd C:\WORKS\WORKSPACES_ANDROID\FM
+
+[svn]
+pushd C:\WORKS\WORKSPACES_ANDROID\Sample\05_Techbooster
+svn co https://techbooster.googlecode.com/svn/trunk/ContextMenu/ ContextMenu
+
+[GIMP]
+pushd C:\WORKS\WORKSPACES_ANDROID\GIMP\Icons
+
+[adb]=========================================================
+adb kill-server
+adb start-server
+adb devices
