@@ -27,29 +27,32 @@ int getsource(char *s);
 
 int main()
 {
-	char	source [MAX];
+	char	source [MAX] = "あいうえお";
+//	char	source [MAX];
 	int		numchar;
 
-	//v-1.0.1
-	int i;
-	for(i = 1; i < 20; i++){
-
-		putchar(0x7E + i);
-
-	}
-
-	putchar('\n');
-
-	putchar(0x8270);	//=> 'p'
-	putchar('\n');
-
-	show_shift_jis();
-
-	//v-1.0.0
-//	numchar = getsource(source);
+//	//v-1.0.1
+//	int i;
+//	for(i = 1; i < 20; i++){
 //
-//	printf("numchar=%d\n", numchar);
-//	printf("source=%s\n", source);
+//		putchar(0x7E + i);
+//
+//	}
+//
+//	putchar('\n');
+//
+//	putchar(0x8270);	//=> 'p'
+//	putchar('\n');
+//
+//	show_shift_jis();
+
+//	v-1.0.0
+//	numchar = getsource(source);
+
+//	source = "あいうえお";
+
+	printf("numchar=%d\n", numchar);
+	printf("source=%s\n", source);
 
 
 //	printf(__FILE__);

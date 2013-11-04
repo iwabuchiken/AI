@@ -1,6 +1,7 @@
 pushd C:\WORKS\WS\WS_Android_20130929_122122\AI\D-1
+pushd C:\WORKS\WS\WS_Android_20130929_122122\AI\D-1 && gitk
 
-a p && C:\WORKS\WS\WS_Android_20130929_122122\AI\D-1 && gitk
+a p && pushd C:\WORKS\WS\WS_Android_20130929_122122\AI\D-1 && gitk
 C:\WORKS\WS\WS_Android_20130929_122122\AI\D-1 && gitk
 
 C:\WORKS\WS\WS_Android_20130929_122122\AI\D-1
