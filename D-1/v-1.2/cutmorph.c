@@ -21,42 +21,34 @@
 #include "d_1.h"
 #endif
 
+#ifndef STAT_H
+#define STAT_H
+#include <sys/stat.h>
+#endif
+
 #define		MAX 65535 * 3
 
 int getsource(char *s);
 
 int main()
 {
-	char	source [MAX];
+	char	source [MAX] = "あいうえお";
+//	char	source [MAX];
 	int		numchar;
 
-	//v-1.0.1
-	int i;
-	for(i = 1; i < 20; i++){
+	FILE	*f;
 
-		putchar(0x7E + i);
+	f = fopen("outout.txt", "w");
 
-	}
+	if (!f)
+		printf("Can't open the file\n");
+	else
+		printf("File opened\n");
 
-	putchar('\n');
+	numchar = fclose(f);
 
-	putchar(0x8270);	//=> 'p'
-	putchar('\n');
+	printf("numchar=%d\n", numchar);
 
-	show_shift_jis();
-
-	//v-1.0.0
-//	numchar = getsource(source);
-//
-//	printf("numchar=%d\n", numchar);
-//	printf("source=%s\n", source);
-
-
-//	printf(__FILE__);
-//	printf("\n");
-//
-//	printf("EOF=%d\n", EOF);
-//	printf("\n");
 
 	return 0;
 }
